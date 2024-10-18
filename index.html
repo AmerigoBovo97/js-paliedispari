@@ -7,10 +7,63 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- /bootstrap -->
-     
+
     <title>Palindromi e Dispari</title>
 </head>
 <body>
+
+    <main>
+
+        <div class="container rounded bg-light mt-3">
+
+            <div class="row align-items-center">
+
+                <!-- palindrom  finder-->
+                <div class="col-lg-5 col-12">
+                    <h2 class="fs-3 fst-italic">Palindromia Portami Via</h2>
+                </div>
+
+                <div class="col-lg-7 col-12 bg-secondary rounded mb-3 p-2">
+                    <form>
+                        <div class="mb-3">
+                        <label for="word-to-check" class="form-label fw-medium fs-6">Scegli la parola che vuoi controllare</label>
+                        <input type="text" class="form-control" id="word-to-check">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="palindrom-button">Controlla</button>
+                    </form>
+                </div>
+
+                <!-- even or odd game -->
+                <div class="col-lg-5 col-12">
+                    <h2 class="fs-3 fst-italic">Riuscirai a battere il computer a pari o dispari??</h2>
+                </div>
+                
+                <div class="col-lg-7 col-12 bg-secondary rounded p-2">
+                    <form>
+                        <div class="mb-3">
+                        <label for="choosen-number" class="form-label fw-medium fs-6">Scegli un numero intero da 1 a 5</label>
+                        <input type="number" step="1" min="1" max="5" class="form-control" id="choosen-number">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="even-radio" checked>
+                            <label class="form-check-label fw-medium fs-6" for="even-radio">
+                              Pari
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" id="odd-radio">
+                            <label class="form-check-label fw-medium fs-6" for="odd-radio">
+                              Dispari
+                            </label>
+                          </div>
+                        <button type="submit" class="btn btn-primary" id="even-odd-button">Gioca</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
     
 
     <!-- main js file -->
